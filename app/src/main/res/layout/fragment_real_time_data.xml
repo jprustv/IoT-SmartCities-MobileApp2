@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="TEMPERATURA_TXT"
+        android:id="@+id/section_tempperatura_txt"
+        android:layout_alignBottom="@+id/section_tempperatura_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/temperatura"
+        android:id="@+id/section_tempperatura_label"
+
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/amonia"
+        android:id="@+id/section_amonia_label"
+        android:layout_below="@+id/section_tempperatura_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="AMONIA_TXT"
+        android:id="@+id/section_amonia_txt"
+        android:layout_alignBottom="@+id/section_amonia_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/oxigenio"
+        android:id="@+id/section_oxigenio_label"
+        android:layout_below="@+id/section_amonia_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="OXIGENIO_TXT"
+        android:id="@+id/section_oxigenio_txt"
+        android:layout_alignBottom="@+id/section_oxigenio_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ph"
+        android:id="@+id/section_ph_label"
+        android:layout_below="@+id/section_oxigenio_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="PH_TEXT"
+        android:id="@+id/section_ph_txt"
+        android:layout_alignBottom="@+id/section_ph_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nitrito"
+        android:id="@+id/section_nitrito_label"
+        android:layout_below="@+id/section_ph_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="NITRITO_TXT"
+        android:id="@+id/section_nitrito_txt"
+        android:layout_alignBottom="@+id/section_nitrito_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/solidos"
+        android:id="@+id/section_solidos_label"
+        android:layout_below="@+id/section_nitrito_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="SOLIDOS_TXT"
+        android:id="@+id/section_solidos_txt"
+        android:layout_alignBottom="@+id/section_solidos_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/co2"
+        android:id="@+id/section_co2_label"
+        android:layout_below="@+id/section_solidos_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="CO2_TXT"
+        android:id="@+id/section_co2_txt"
+        android:layout_alignBottom="@+id/section_co2_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/salinidade"
+        android:id="@+id/section_salinidade_label"
+        android:layout_below="@+id/section_co2_label"
+        android:layout_alignLeft="@+id/vpPager"
+        android:layout_alignStart="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="SALINIDADE_TXT"
+        android:id="@+id/section_salinidade_txt"
+        android:layout_alignBottom="@+id/section_salinidade_label"
+        android:layout_alignRight="@+id/vpPager"
+        android:layout_alignEnd="@+id/vpPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="%"
+        android:id="@+id/section_porcentagem"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/section_salinidade_label"
+        android:layout_centerHorizontal="true"
+        style = "@style/BigNumber"/>
+
+
+</RelativeLayout>

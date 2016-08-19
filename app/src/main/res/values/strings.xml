@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IoT-SmartCities-MobileApp2</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="amonia">Amônia</string>
+    <string name="oxigenio">Oxigênio dissolvido</string>
+    <string name="ph">PH</string>
+    <string name="nitrito">Nitrito/Nitrato</string>
+    <string name="solidos">Sólidos suspensos</string>
+    <string name="co2">CO2</string>
+    <string name="salinidade">Salinidade</string>
+    <string name="page0">Níveis neste momento</string>
+    <string name="page1">Estatísticas</string>
+    <string name="page2">A ser definido</string>
+
+</resources>
