@@ -5,10 +5,12 @@ package com.example.jonathan.iot_smartcities_mobileapp2;
  */
 public class PIPEInstance {
     String timestamp;
+    int position;
     double temperatura, amonia, oxigenioDissolvido, ph, nitrito, solidosSuspensos, co2, salinidade;
-    public PIPEInstance(String timestamp, double temperatura, double amonia, double oxigenioDissolvido, double ph
+    public PIPEInstance(String timestamp, int position, double temperatura, double amonia, double oxigenioDissolvido, double ph
                             , double nitrito, double solidosSuspensos, double co2, double salinidade){
         this.timestamp = timestamp;
+        this.position = position;
         this.temperatura = temperatura;
         this.amonia = amonia;
         this.oxigenioDissolvido = oxigenioDissolvido;
@@ -21,6 +23,22 @@ public class PIPEInstance {
 
     public String getTimestamp() {
         return timestamp;
+    }
+
+    public double getSpecificParameter(String parameter){
+        if (parameter.toLowerCase().equals("temperatura")) return temperatura;
+        else if (parameter.toLowerCase().equals("amonia")) return amonia;
+        else if (parameter.toLowerCase().equals("oxigenio")) return oxigenioDissolvido;
+        else if (parameter.toLowerCase().equals("ph")) return ph;
+        else if (parameter.toLowerCase().equals("nitrito")) return nitrito;
+        else if (parameter.toLowerCase().equals("solidos")) return solidosSuspensos;
+        else if (parameter.toLowerCase().equals("co2")) return co2;
+        else if (parameter.toLowerCase().equals("salinidade")) return salinidade;
+        return 0;
+    }
+
+    public int getPosition(){
+        return position;
     }
 
     public double getTemperatura() {

@@ -13,7 +13,16 @@ public class PIPEList {
 
     public void getAllData(){
         try {
-            PIPEList = connection.sendGet();
+
+                PIPEList = connection.sendGet();
+
+            // Pra Testar Offline
+/*            List<PIPEInstance> tempList = new LinkedList<>();
+            tempList.add(new PIPEInstance("110820161131", 27, 0.004, 8, 7, 62, 6, 12, 18));
+            tempList.add(new PIPEInstance("110820161145", 15, 0.002, 8, 1, 89, 2, 29, 4));
+            PIPEList = tempList;
+*/
+
         } catch (Exception e) {
             e.printStackTrace();
         }

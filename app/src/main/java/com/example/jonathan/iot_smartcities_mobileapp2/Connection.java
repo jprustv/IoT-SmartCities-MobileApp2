@@ -19,6 +19,7 @@ import java.util.List;
 public class Connection {
     // JSON URL for testing:
     // https://api.myjson.com/bins/2ognh
+    // https://api.myjson.com/bins/3g9fj
 
     private final String USER_AGENT = "Mozilla/5.0";
     private final static String debugPrefix = "<Connection> ";
@@ -28,7 +29,7 @@ public class Connection {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        String url = "https://api.myjson.com/bins/2ognh";
+        String url = "https://api.myjson.com/bins/3g9fj";
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -70,6 +71,7 @@ public class Connection {
             for (int i = 0; i < response.length(); i++) {
                 JSONObject obj = response.getJSONObject(i);
                 found.add(new PIPEInstance(obj.getString("timestamp"),
+                                           i+1,
                                            obj.getDouble("temperatura"),
                                            obj.getDouble("amonia"),
                                            obj.getDouble("oxigenioDissolvido"),
